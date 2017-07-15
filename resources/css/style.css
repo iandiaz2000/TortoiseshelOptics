@@ -1,0 +1,242 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > * {
+  max-width: 960px;
+  width: 100%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header {
+  height: 30rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.navbar {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.navbar li {
+  margin-right: 2rem;
+  list-style: none;
+}
+
+.menu {
+  display: none;
+  margin: 1rem 2rem;
+}
+
+.boxtext {
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.info {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 25.5rem;
+}
+
+.item {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  max-width: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.horizontal {
+  width: 5rem;
+}
+
+.vertical {
+  width: 3.5rem;
+}
+
+.about {
+  margin-top: 3rem;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.description {
+  width: 46.5%;
+}
+
+.descrheading {
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+}
+
+.description p {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+
+.footerlogo {
+  display: flex;
+  background-color: azure;
+  align-items: center;
+}
+
+.footerlogo img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container > * {
+    max-width: 100%;
+  }
+
+  .navigation {
+    margin-top: 0;
+  }
+
+  .header {
+    height: 22rem;
+    background-position: 30%;
+  }
+
+  .boxtext {
+    left: 0;
+    position: static;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .boxtext {
+    margin-top: 9rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .banner {
+    align-items: stretch;
+  }
+
+  .info {
+    margin-top: 3.77rem;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    margin-bottom: 1.54rem;
+    font-size: 0.77rem;
+    text-align: center;
+  }
+
+  .about {
+    margin-top: 3.77rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .descrheading {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .footerlogo {
+    justify-content: space-around;
+  }
+
+  .footerlogo span {
+    display: none;
+  }
+
+  .logo span {
+    display: none;
+  }
+}
